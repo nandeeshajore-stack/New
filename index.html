@@ -1,0 +1,830 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Advanced GroHair & GloSkin – Whitefield | Leading Hair & Skin Clinic in Bengaluru</title>
+<meta name="description" content="Advanced GroHair & GloSkin, Whitefield, Bengaluru — a leading hair transplantation and skin care clinic offering hair transplant, beard & eyebrow restoration, oxygen laser therapy and cosmetic hair systems." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fdfaf6;
+    --bg-2:#f7efe6;
+    --ink:#1c1612;
+    --ink-2:#3a2e26;
+    --muted:#7a6a5d;
+    --line:#eadfd2;
+    --coral:#e26a5a;
+    --amber:#d98a3b;
+    --orange:#e8893d;
+    --pink:#f5b8a8;
+    --cream:#fff6ec;
+    --gold:#b8894a;
+    --grad: linear-gradient(135deg,#e26a5a 0%,#e8893d 45%,#d98a3b 100%);
+    --grad-soft: linear-gradient(135deg,#fff1e2 0%,#fde0d4 50%,#f7c9b4 100%);
+    --shadow-sm: 0 2px 10px rgba(40,20,10,.06);
+    --shadow: 0 14px 40px rgba(90,40,20,.10);
+    --shadow-lg: 0 30px 70px rgba(90,40,20,.16);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+    font-size:16px;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-.01em;line-height:1.15}
+  h1{font-size:clamp(2.4rem,5.4vw,4.4rem)}
+  h2{font-size:clamp(1.9rem,3.6vw,3rem)}
+  h3{font-size:clamp(1.35rem,2.2vw,1.7rem)}
+  p{color:var(--ink-2)}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .container{max-width:1240px;margin:0 auto;padding:0 28px}
+  .eyebrow{
+    display:inline-block;font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--coral);font-weight:600;margin-bottom:18px;
+  }
+  .eyebrow::before{content:"";display:inline-block;width:28px;height:1px;background:var(--coral);vertical-align:middle;margin-right:12px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:15px 28px;border-radius:999px;font-weight:600;font-size:.92rem;
+    letter-spacing:.02em;cursor:pointer;border:none;transition:all .35s cubic-bezier(.2,.8,.2,1);
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 24px rgba(226,106,90,.35)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(226,106,90,.45)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:#fff}
+  .btn-light{background:#fff;color:var(--ink);border:1px solid var(--line)}
+  .btn-light:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .btn svg{width:16px;height:16px}
+
+  /* HEADER */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(253,250,246,.75);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid transparent;transition:all .35s ease;
+  }
+  header.scrolled{border-bottom-color:var(--line);background:rgba(253,250,246,.92)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo-mark{
+    width:42px;height:42px;border-radius:50%;
+    background:var(--grad);display:grid;place-items:center;color:#fff;
+    font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;
+    box-shadow:0 8px 18px rgba(226,106,90,.35);
+  }
+  .logo-text{display:flex;flex-direction:column;line-height:1.1}
+  .logo-text strong{font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:600;color:var(--ink)}
+  .logo-text span{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  .nav-links{display:flex;gap:36px;align-items:center}
+  .nav-links a{font-size:.92rem;color:var(--ink-2);font-weight:500;position:relative;transition:color .2s}
+  .nav-links a:hover{color:var(--coral)}
+  .nav-links a::after{content:"";position:absolute;bottom:-6px;left:0;right:0;height:1px;background:var(--coral);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+  .nav-links a:hover::after{transform:scaleX(1)}
+  .nav-cta{display:flex;gap:10px;align-items:center}
+  .nav-cta .btn{padding:11px 22px;font-size:.85rem}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;width:44px;height:44px;position:relative}
+  .menu-toggle span{display:block;width:22px;height:1.5px;background:var(--ink);margin:5px auto;transition:.3s}
+  .menu-toggle.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .menu-toggle.open span:nth-child(2){opacity:0}
+  .menu-toggle.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+  /* HERO */
+  .hero{
+    position:relative;padding:160px 0 100px;overflow:hidden;
+    background:
+      radial-gradient(ellipse at top right,rgba(245,184,168,.35),transparent 55%),
+      radial-gradient(ellipse at bottom left,rgba(232,137,61,.18),transparent 55%),
+      var(--bg);
+  }
+  .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}
+  .hero-copy h1 span{color:var(--coral);font-style:italic}
+  .hero-copy p{margin-top:26px;font-size:1.08rem;max-width:540px;color:var(--ink-2)}
+  .hero-cta{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap}
+  .hero-meta{display:flex;gap:30px;margin-top:48px;flex-wrap:wrap}
+  .hero-meta div{display:flex;flex-direction:column}
+  .hero-meta strong{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--ink)}
+  .hero-meta span{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .hero-visual{position:relative;aspect-ratio:4/5;border-radius:28px;overflow:hidden;box-shadow:var(--shadow-lg)}
+  .hero-visual::before{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(180deg,rgba(255,246,236,0) 40%,rgba(28,22,18,.45) 100%),
+      url('https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=900&q=80') center/cover;
+  }
+  .hero-badge{
+    position:absolute;bottom:26px;left:26px;right:26px;
+    background:rgba(255,255,255,.92);backdrop-filter:blur(10px);
+    border-radius:18px;padding:18px 22px;display:flex;align-items:center;gap:16px;
+  }
+  .hero-badge-icon{width:46px;height:46px;border-radius:12px;background:var(--grad);display:grid;place-items:center;color:#fff;flex-shrink:0}
+  .hero-badge strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.15rem}
+  .hero-badge span{font-size:.82rem;color:var(--muted)}
+
+  .floating-shape{position:absolute;border-radius:50%;filter:blur(40px);opacity:.5;pointer-events:none}
+  .fs-1{width:260px;height:260px;background:var(--pink);top:6%;right:-80px}
+  .fs-2{width:220px;height:220px;background:#f5c89a;bottom:10%;left:-60px}
+
+  /* TRUST */
+  .trust{padding:70px 0;background:linear-gradient(180deg,var(--bg),var(--bg-2))}
+  .trust-inner{
+    background:#fff;border-radius:28px;padding:44px 50px;
+    display:grid;grid-template-columns:1.2fr 1fr auto;gap:40px;align-items:center;
+    box-shadow:var(--shadow);border:1px solid var(--line);
+  }
+  .trust-rating{display:flex;align-items:center;gap:22px}
+  .trust-score{font-family:'Cormorant Garamond',serif;font-size:3.6rem;line-height:1;color:var(--ink);font-weight:600}
+  .trust-stars{display:flex;gap:3px;color:var(--amber)}
+  .trust-label{font-size:.82rem;color:var(--muted);margin-top:4px}
+  .trust-label strong{color:var(--ink);font-weight:600}
+  .trust-divider{width:1px;height:70px;background:var(--line)}
+  .trust-text h3{font-size:1.3rem;margin-bottom:6px}
+  .trust-text p{font-size:.92rem;color:var(--muted)}
+  .trust .btn{padding:14px 24px}
+
+  /* SECTIONS */
+  section{padding:110px 0}
+  .section-head{text-align:center;max-width:680px;margin:0 auto 60px}
+  .section-head p{margin-top:16px;color:var(--muted);font-size:1.02rem}
+
+  /* SERVICES */
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .service-card{
+    background:#fff;border:1px solid var(--line);border-radius:22px;padding:36px 30px;
+    position:relative;overflow:hidden;transition:all .4s cubic-bezier(.2,.8,.2,1);
+  }
+  .service-card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .45s;
+  }
+  .service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+  .service-card:hover::before{transform:scaleX(1)}
+  .service-icon{
+    width:58px;height:58px;border-radius:16px;background:var(--grad-soft);
+    display:grid;place-items:center;color:var(--coral);margin-bottom:22px;
+  }
+  .service-card h3{margin-bottom:10px}
+  .service-card p{font-size:.92rem;color:var(--muted);margin-bottom:20px}
+  .service-link{font-size:.85rem;font-weight:600;color:var(--coral);display:inline-flex;align-items:center;gap:6px}
+  .service-link svg{transition:transform .3s}
+  .service-card:hover .service-link svg{transform:translateX(4px)}
+  .service-card.placeholder{background:repeating-linear-gradient(45deg,#fff,#fff 10px,#fdf4ea 10px,#fdf4ea 20px);border-style:dashed}
+
+  /* HAIR RESTORATION */
+  .restore{background:linear-gradient(180deg,var(--bg-2),var(--bg));position:relative}
+  .restore-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center}
+  .restore-visual{position:relative;aspect-ratio:5/6;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg)}
+  .restore-visual::before{
+    content:"";position:absolute;inset:0;
+    background:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80') center/cover;
+  }
+  .restore-stat{
+    position:absolute;top:30px;right:-20px;background:#fff;padding:20px 26px;border-radius:18px;
+    box-shadow:var(--shadow);display:flex;align-items:center;gap:14px;
+  }
+  .restore-stat strong{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--coral);display:block;line-height:1}
+  .restore-stat span{font-size:.78rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+  .restore-copy h2{margin-bottom:22px}
+  .restore-copy h2 em{color:var(--coral);font-style:italic}
+  .restore-copy p{margin-bottom:18px;color:var(--ink-2)}
+  .restore-points{list-style:none;margin:28px 0}
+  .restore-points li{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+  .restore-points li:last-child{border-bottom:none}
+  .restore-points .tick{
+    width:28px;height:28px;border-radius:50%;background:var(--grad-soft);color:var(--coral);
+    display:grid;place-items:center;flex-shrink:0;
+  }
+  .restore-points strong{display:block;font-weight:600;color:var(--ink)}
+  .restore-points span{font-size:.88rem;color:var(--muted)}
+
+  /* RESULTS */
+  .results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .result-card{
+    position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;
+    background:var(--grad-soft);box-shadow:var(--shadow-sm);
+    display:grid;grid-template-columns:1fr 1fr;
+  }
+  .result-half{
+    display:grid;place-items:center;font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;position:relative;
+  }
+  .result-half.before{background:linear-gradient(180deg,#f5e8d8,#ead6bf)}
+  .result-half.after{background:linear-gradient(180deg,#fde0d4,#f5b8a8)}
+  .result-divider{
+    position:absolute;left:50%;top:0;bottom:0;width:2px;background:#fff;z-index:2;
+  }
+  .result-label{
+    position:absolute;bottom:20px;left:50%;transform:translateX(-50%);
+    background:rgba(255,255,255,.95);backdrop-filter:blur(8px);padding:10px 20px;
+    border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink);z-index:3;white-space:nowrap;
+  }
+  .result-card.placeholder{border:2px dashed var(--line);background:transparent}
+  .result-card.placeholder .result-half{background:transparent}
+
+  /* WHY CHOOSE */
+  .why{background:linear-gradient(135deg,#1c1612 0%,#2a1e18 100%);color:#f5e8d8;position:relative;overflow:hidden}
+  .why::before{
+    content:"";position:absolute;top:-100px;right:-100px;width:500px;height:500px;border-radius:50%;
+    background:radial-gradient(circle,rgba(226,106,90,.18),transparent 70%);
+  }
+  .why .eyebrow{color:var(--pink)}
+  .why .eyebrow::before{background:var(--pink)}
+  .why .section-head p{color:#b8a694}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative;z-index:1}
+  .why-card{
+    background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;padding:34px 28px;transition:all .35s;
+  }
+  .why-card:hover{background:rgba(255,255,255,.07);transform:translateY(-4px);border-color:rgba(245,184,168,.25)}
+  .why-icon{
+    width:52px;height:52px;border-radius:14px;background:var(--grad);
+    display:grid;place-items:center;color:#fff;margin-bottom:22px;
+  }
+  .why-card h3{color:#fff;margin-bottom:10px}
+  .why-card p{color:#b8a694;font-size:.92rem}
+  .why-card.placeholder{border-style:dashed;opacity:.75}
+
+  /* CTA */
+  .cta-banner{padding:0}
+  .cta-inner{
+    max-width:1240px;margin:0 auto;padding:0 28px;
+  }
+  .cta-card{
+    background:var(--grad);border-radius:32px;padding:80px 60px;text-align:center;color:#fff;
+    position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(226,106,90,.35);
+  }
+  .cta-card::before,.cta-card::after{
+    content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.08);
+  }
+  .cta-card::before{width:300px;height:300px;top:-120px;left:-80px}
+  .cta-card::after{width:220px;height:220px;bottom:-80px;right:-60px}
+  .cta-card h2{color:#fff;position:relative;z-index:1;max-width:780px;margin:0 auto 18px}
+  .cta-card p{color:rgba(255,255,255,.9);max-width:600px;margin:0 auto 34px;position:relative;z-index:1}
+  .cta-card .btn{background:#fff;color:var(--coral);position:relative;z-index:1}
+  .cta-card .btn:hover{background:#1c1612;color:#fff}
+
+  /* CONTACT */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:stretch}
+  .contact-info{
+    background:#fff;border-radius:24px;padding:44px;border:1px solid var(--line);box-shadow:var(--shadow-sm);
+  }
+  .contact-info h3{margin-bottom:8px}
+  .contact-info > p{color:var(--muted);margin-bottom:30px;font-size:.95rem}
+  .contact-item{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .contact-item:last-of-type{border-bottom:none}
+  .contact-icon{
+    width:44px;height:44px;border-radius:12px;background:var(--grad-soft);color:var(--coral);
+    display:grid;place-items:center;flex-shrink:0;
+  }
+  .contact-item strong{display:block;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;font-weight:600}
+  .contact-item a,.contact-item span{color:var(--ink);font-size:.98rem;line-height:1.5}
+  .contact-item a:hover{color:var(--coral)}
+  .contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+  .contact-actions .btn{justify-content:center;padding:13px 18px;font-size:.85rem}
+  .map-wrap{
+    border-radius:24px;overflow:hidden;box-shadow:var(--shadow);min-height:540px;
+    position:relative;border:1px solid var(--line);
+  }
+  .map-wrap iframe{width:100%;height:100%;min-height:540px;border:0;display:block}
+
+  /* FOOTER */
+  footer{background:#1a1410;color:#b8a694;padding:80px 0 30px}
+  .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:50px;margin-bottom:60px}
+  .footer-brand .logo-text strong{color:#fff}
+  .footer-brand .logo-text span{color:#b8a694}
+  .footer-brand p{margin-top:18px;font-size:.92rem;max-width:340px}
+  footer h4{color:#fff;font-family:'Inter',sans-serif;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;margin-bottom:22px}
+  footer ul{list-style:none}
+  footer li{margin-bottom:10px}
+  footer a{font-size:.92rem;color:#b8a694;transition:color .2s}
+  footer a:hover{color:var(--pink)}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);padding-top:28px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+    font-size:.85rem;
+  }
+
+  /* MOBILE STICKY CTA */
+  .mobile-cta{
+    display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;
+    background:rgba(255,255,255,.96);backdrop-filter:blur(14px);
+    border-top:1px solid var(--line);padding:12px 16px;
+    grid-template-columns:1fr 1fr;gap:10px;
+    box-shadow:0 -10px 30px rgba(0,0,0,.08);
+  }
+  .mobile-cta .btn{justify-content:center;padding:13px 16px;font-size:.88rem;width:100%}
+
+  /* ANIMATIONS */
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+
+  /* RESPONSIVE */
+  @media(max-width:1024px){
+    .hero-grid,.restore-grid,.contact-grid{grid-template-columns:1fr;gap:50px}
+    .services-grid,.results-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+    .trust-inner{grid-template-columns:1fr;text-align:center;padding:36px 30px}
+    .trust-divider{display:none}
+    .trust-rating{justify-content:center}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:40px}
+  }
+  @media(max-width:720px){
+    .nav-links{
+      position:fixed;top:74px;left:16px;right:16px;
+      background:#fff;border-radius:20px;padding:24px;flex-direction:column;gap:18px;
+      box-shadow:var(--shadow-lg);border:1px solid var(--line);
+      transform:translateY(-20px);opacity:0;pointer-events:none;transition:.3s;
+    }
+    .nav-links.open{transform:translateY(0);opacity:1;pointer-events:auto}
+    .nav-links a{font-size:1rem}
+    .nav-cta{display:none}
+    .menu-toggle{display:block}
+    section{padding:80px 0}
+    .hero{padding:130px 0 70px}
+    .services-grid,.results-grid,.why-grid{grid-template-columns:1fr}
+    .footer-grid{grid-template-columns:1fr;gap:36px}
+    .contact-actions{grid-template-columns:1fr}
+    .cta-card{padding:56px 28px}
+    .mobile-cta{display:grid}
+    body{padding-bottom:84px}
+    .restore-stat{right:20px}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container nav">
+    <a href="#" class="logo" aria-label="Advanced GroHair & GloSkin">
+      <div class="logo-mark">G</div>
+      <div class="logo-text">
+        <strong>GroHair &amp; GloSkin</strong>
+        <span>Advanced · Whitefield</span>
+      </div>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Treatments</a>
+      <a href="#restoration">Hair Restoration</a>
+      <a href="#results">Results</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+918270556789" class="btn btn-light">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+        Call
+      </a>
+      <a href="#contact" class="btn btn-primary">Book Consultation</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="floating-shape fs-1"></div>
+  <div class="floating-shape fs-2"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Advanced GroHair &amp; GloSkin · Whitefield</span>
+      <h1>Advanced Hair &amp; Skin Care, <span>Designed Around You</span></h1>
+      <p>A refined approach to hair restoration and skin wellness — where clinical precision meets thoughtful care. Discover personalised treatments crafted for your unique concerns, in a calm, contemporary clinic setting.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          Book a Consultation
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn btn-ghost">Explore Treatments</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>4.7★</strong><span>Google Rating</span></div>
+        <div><strong>193</strong><span>Google Reviews</span></div>
+        <div><strong>Whitefield</strong><span>Bengaluru</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-badge">
+        <div class="hero-badge-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div>
+          <strong>Trusted in Whitefield</strong>
+          <span>A leading hair &amp; skin clinic in Bengaluru</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust" style="padding:0">
+  <div class="container">
+    <div class="trust-inner reveal">
+      <div class="trust-rating">
+        <div class="trust-score">4.7</div>
+        <div>
+          <div class="trust-stars">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="trust-label"><strong>193</strong> Google Reviews · <strong>4.7/5</strong></div>
+        </div>
+      </div>
+      <div class="trust-text">
+        <h3>Trusted by our community</h3>
+        <p>Honest reviews from real patients who chose Advanced GroHair &amp; GloSkin.</p>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Advanced+GroHair+GloSkin+Whitefield+Bengaluru" target="_blank" rel="noopener" class="btn btn-light">
+        View Google Reviews
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Treatments</span>
+      <h2>Considered care for hair &amp; skin</h2>
+      <p>A focused portfolio of hair restoration and aesthetic treatments, delivered with clinical rigour and a gentle, patient-first approach.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M5 8c2-2 5-2 7 0s5 2 7 0M5 16c2-2 5-2 7 0s5 2 7 0"/></svg>
+        </div>
+        <h3>Hair Transplantation</h3>
+        <p>Advanced hair transplant procedures designed to restore a natural, balanced hairline and long-term confidence.</p>
+        <a href="#contact" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="10" r="6"/><path d="M8 20c1-2 3-3 4-3s3 1 4 3"/></svg>
+        </div>
+        <h3>Beard Hair Transplant</h3>
+        <p>Refined beard restoration for a fuller, well-defined look — carefully shaped to suit your facial structure.</p>
+        <a href="#contact" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12c3-4 6-4 9 0s6 4 9 0"/><path d="M3 12c3 4 6 4 9 0s6-4 9 0"/></svg>
+        </div>
+        <h3>Eyebrow Hair Transplant</h3>
+        <p>Precision eyebrow restoration that recreates natural direction, density and shape for a softer, defined frame.</p>
+        <a href="#contact" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>
+        </div>
+        <h3>Oxygen Laser Therapy</h3>
+        <p>A non-invasive therapy that supports scalp health and complements hair restoration protocols.</p>
+        <a href="#contact" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </div>
+        <h3>Cosmetic Hair Systems</h3>
+        <p>Customised, natural-looking cosmetic hair systems tailored to your lifestyle and aesthetic preferences.</p>
+        <a href="#contact" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3c0 5-2 7-2 11a8 8 0 0 0 16 0c0-4-2-6-2-11"/><path d="M8 14c2 2 6 2 8 0"/></svg>
+        </div>
+        <h3>Hair Extensions</h3>
+        <p>Premium hair extensions crafted for seamless blend, comfort and an effortlessly fuller look.</p>
+        <a href="#contact" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+
+      <div class="service-card placeholder reveal">
+        <div class="service-icon" style="opacity:.6">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>
+        </div>
+        <h3>[ADD SKIN SERVICES]</h3>
+        <p>Skin care treatments and aesthetic services — details to be added. Please confirm services, descriptions and any required regulatory wording.</p>
+        <a href="#contact" class="service-link">Enquire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HAIR RESTORATION -->
+<section id="restoration" class="restore">
+  <div class="container restore-grid">
+    <div class="restore-visual reveal">
+      <div class="restore-stat">
+        <strong>4.7★</strong>
+        <span>Rated on<br/>Google</span>
+      </div>
+    </div>
+    <div class="restore-copy reveal">
+      <span class="eyebrow">Hair Restoration</span>
+      <h2>Thoughtful restoration, <em>rooted in you</em></h2>
+      <p>Hair loss is deeply personal — and the right approach begins with listening. At Advanced GroHair &amp; GloSkin, every restoration journey starts with a calm, unhurried consultation to understand your concerns, goals and lifestyle.</p>
+      <p>From there, a considered plan is shaped around you — combining clinical precision with a clear explanation of what to expect at every step.</p>
+      <ul class="restore-points">
+        <li>
+          <span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>
+          <div><strong>Personal Consultation</strong><span>A focused discussion of your goals, history and options.</span></div>
+        </li>
+        <li>
+          <span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>
+          <div><strong>Tailored Treatment Plan</strong><span>Protocols designed around your hair type, pattern and expectations.</span></div>
+        </li>
+        <li>
+          <span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>
+          <div><strong>Considered Aftercare</strong><span>Clear guidance and follow-up to support lasting results.</span></div>
+        </li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Results Gallery</span>
+      <h2>Real journeys, quietly restored</h2>
+      <p>A glimpse into the transformations our patients experience. Patient imagery and case details to be added with consent.</p>
+    </div>
+    <div class="results-grid">
+
+      <div class="result-card reveal">
+        <div class="result-half before">[BEFORE IMAGE]</div>
+        <div class="result-half after">[AFTER IMAGE]</div>
+        <div class="result-divider"></div>
+        <div class="result-label">Patient Result 01</div>
+      </div>
+
+      <div class="result-card reveal">
+        <div class="result-half before">[BEFORE IMAGE]</div>
+        <div class="result-half after">[AFTER IMAGE]</div>
+        <div class="result-divider"></div>
+        <div class="result-label">Patient Result 02</div>
+      </div>
+
+      <div class="result-card reveal">
+        <div class="result-half before">[BEFORE IMAGE]</div>
+        <div class="result-half after">[AFTER IMAGE]</div>
+        <div class="result-divider"></div>
+        <div class="result-label">Patient Result 03</div>
+      </div>
+
+      <div class="result-card placeholder reveal">
+        <div class="result-half">[ADD PATIENT RESULT]</div>
+        <div class="result-label">Case Study 04</div>
+      </div>
+
+      <div class="result-card placeholder reveal">
+        <div class="result-half">[ADD PATIENT RESULT]</div>
+        <div class="result-label">Case Study 05</div>
+      </div>
+
+      <div class="result-card placeholder reveal">
+        <div class="result-half">[ADD PATIENT RESULT]</div>
+        <div class="result-label">Case Study 06</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section id="why" class="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>A clinic built on care, clarity &amp; craft</h2>
+      <p>We believe great outcomes begin with great conversations — and continue through honest guidance at every step.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 7v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V7l-8-5z"/></svg></div>
+        <h3>Patient-First Approach</h3>
+        <p>Every consultation begins with listening — your concerns, goals and expectations guide the plan we build together.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7L9 18l-5-5"/></svg></div>
+        <h3>Considered Protocols</h3>
+        <p>Treatments are shaped around you — never templated — combining clinical discipline with a thoughtful, personalised touch.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+        <h3>Trusted in Whitefield</h3>
+        <p>Rated <strong style="color:#f5b8a8">4.7/5</strong> by <strong style="color:#f5b8a8">193</strong> patients on Google — a reflection of consistent care and honest outcomes.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Unhurried Consultations</h3>
+        <p>Time to ask questions, understand options and make decisions that feel right — without pressure.</p>
+      </div>
+      <div class="why-card placeholder reveal">
+        <div class="why-icon" style="opacity:.6"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></div>
+        <h3>[ADD VERIFIED USP]</h3>
+        <p>[ADD VERIFIED INFORMATION — e.g., specific technology, methodology or differentiator confirmed by the clinic.]</p>
+      </div>
+      <div class="why-card placeholder reveal">
+        <div class="why-icon" style="opacity:.6"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></div>
+        <h3>[ADD VERIFIED CREDENTIAL]</h3>
+        <p>[ADD VERIFIED INFORMATION — e.g., verified credentials, qualifications or accreditations only.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="cta-inner">
+    <div class="cta-card reveal">
+      <span class="eyebrow" style="color:#fff;opacity:.9">Book Your Visit</span>
+      <h2>Ready to Explore Your Hair &amp; Skin Treatment Options?</h2>
+      <p>Begin with a calm, unhurried consultation. We'll listen, explain and shape a path that feels right for you.</p>
+      <a href="#contact" class="btn">Book a Consultation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Visit the Clinic</span>
+      <h2>We're here when you're ready</h2>
+      <p>Reach out by phone, message or in person. Walk-ins welcome; consultations best by appointment.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Advanced GroHair &amp; GloSkin</h3>
+        <p>Whitefield · Bengaluru</p>
+
+        <div class="contact-item">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><strong>Phone</strong><a href="tel:+918270556789">+91 82705 56789</a></div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><strong>Clinic Address</strong><span>1st Floor, Vaswani Pinnacle, ELV Amoris, 11/3, Whitefield Main Rd, opposite Borewell Road, Landmark: Behind, Whitefield, Bengaluru, Karnataka 560066</span></div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><strong>Clinic Hours</strong><span>[ADD VERIFIED CLINIC HOURS]</span></div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1 0 2 1 2 2v12c0 1-1 2-2 2H4c-1 0-2-1-2-2V6c0-1 1-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+          <div><strong>Email</strong><span>[ADD VERIFIED EMAIL]</span></div>
+        </div>
+
+        <div class="contact-actions">
+          <a href="tel:+918270556789" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+            Call Now
+          </a>
+          <a href="https://wa.me/918270556789" target="_blank" rel="noopener" class="btn btn-light">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.5-.7-2.7-1.6-3.7-3.1-.2-.3 0-.5.1-.7l.5-.6c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=1st+Floor+Vaswani+Pinnacle+ELV+Amoris+11%2F3+Whitefield+Main+Rd+opposite+Borewell+Road+Whitefield+Bengaluru+Karnataka+560066" target="_blank" rel="noopener" class="btn btn-light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Get Directions
+          </a>
+          <a href="tel:+918270556789" class="btn btn-light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Book Consultation
+          </a>
+        </div>
+      </div>
+
+      <div class="map-wrap reveal">
+        <iframe loading="lazy" allowfullscreen
+          src="https://www.google.com/maps?q=Vaswani+Pinnacle+ELV+Amoris+Whitefield+Main+Rd+Bengaluru+Karnataka+560066&output=embed"
+          title="Advanced GroHair & GloSkin - Whitefield location map">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark">G</div>
+          <div class="logo-text">
+            <strong>GroHair &amp; GloSkin</strong>
+            <span>Advanced · Whitefield</span>
+          </div>
+        </div>
+        <p>A leading hair &amp; skin clinic in Whitefield, Bengaluru — offering hair transplantation, beard &amp; eyebrow restoration, oxygen laser therapy, cosmetic hair systems and hair extensions.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Treatments</a></li>
+          <li><a href="#restoration">Hair Restoration</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Hair Transplantation</a></li>
+          <li><a href="#services">Beard Hair Transplant</a></li>
+          <li><a href="#services">Eyebrow Hair Transplant</a></li>
+          <li><a href="#services">Oxygen Laser Therapy</a></li>
+          <li><a href="#services">Cosmetic Hair Systems</a></li>
+          <li><a href="#services">Hair Extensions</a></li>
+          <li><a href="#services">[ADD SKIN SERVICES]</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+918270556789">+91 82705 56789</a></li>
+          <li><a href="https://wa.me/918270556789" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>1st Floor, Vaswani Pinnacle, ELV Amoris, 11/3, Whitefield Main Rd, opposite Borewell Road, Whitefield, Bengaluru, Karnataka 560066</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="yr"></span> Advanced GroHair &amp; GloSkin – Whitefield. Hair &amp; Skin Clinic. All rights reserved.</div>
+      <div style="display:flex;gap:22px">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">[ADD LEGAL LINKS]</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-cta">
+  <a href="tel:+918270556789" class="btn btn-light">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+    Call Now
+  </a>
+  <a href="#contact" class="btn btn-primary">Book Consultation</a>
+</div>
+
+<script>
+  // Header scroll state
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 20) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  });
+
+  // Mobile menu
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    links.classList.toggle('open');
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    toggle.classList.remove('open');
+    links.classList.remove('open');
+  }));
+
+  // Reveal on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target);} });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
